@@ -1,0 +1,147 @@
+
+body {
+    background-image: url('night.jpg');
+    background-size: cover;
+    color: white;
+  }
+  
+  /* Style the navigation bar */
+  nav {
+    display: flex;
+    justify-content: center; /* center the contents horizontally */
+    align-items: center;
+    padding: 1rem;
+    background-color: #5e6ab6;
+  }
+  
+  nav button {
+    display: none;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-right: 1rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  /* Media query for mobile devices */
+  @media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    nav button {
+      display: block;
+      color: white;
+      font-weight: bold;
+      background-color: #4CAF50;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+    }
+    
+    nav ul {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+    }
+    
+    nav li {
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+    
+    nav.show ul {
+      display: flex;
+    }
+  }  
+    .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    }
+    
+    h1 {
+    text-align: center;
+    font-size: 2rem;
+    }
+    
+    .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    }
+    
+    label {
+    font-size: 1.2rem;
+    }
+    
+    input {
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+    background-color: rgba(255,255,255,0.8);
+    }
+    
+    button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    background-color: #5e6ab6;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    }
+    
+    button:hover {
+    background-color: #4a549c;
+    }
+    
+    /* Media query for mobile devices */
+    @media screen and (max-width: 768px) {
+    
+    .container {
+    margin-top: 20px;
+    }
+    
+    h1 {
+    font-size: 1.5rem;
+    }
+    
+    input {
+    font-size: 1rem;
+    padding: 8px;
+    }
+    
+    button {
+    font-size: 1rem;
+    padding: 8px 16px;
+    }
+    }
+  

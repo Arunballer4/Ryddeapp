@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Chore Tracker</title>
+    <link rel="stylesheet" href="leaderboard.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="addtask.html">Add Task</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li><a href="history.html">tasks completed</a></li>
+            <li><a href="custom task.html">make new task</a></li>
+          </ul>
+        </nav>
+    </header>
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+<header>
+    <label for="users"></label>
+    <select id="users">
+        <!-- Family member options will be populated from Firebase -->
+    </select>
+</header>
+
+<main>
+    <section id="select-task">
+        <h2>Choose Task</h2>
+        <select id="tasks">
+            <!-- Chore options will be populated from Firebase -->
+        </select>
+        <button id="btnRegister">Done</button>
+    </section>
+    <section id="statistics">
+        <h2>Statistics</h2>
+        <div id="bar-chart">
+            <!-- Bar chart will be generated using JavaScript -->
+        </div>
+        <label for="datetime">Date and Time:</label>
+        <input type="datetime-local" id="datetime" name="datetime">
+    </section>
+
+    <section>
+        <h2></h2>
+        <div id ="detail-report">
+        </div>
+    </section>
+</main>
+<script src="addtask.js"></script>
+<script src="firework.js"></script>
+</body>
+</html>

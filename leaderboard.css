@@ -1,0 +1,143 @@
+body {
+  background-image: url('night.jpg');
+  background-size: cover;
+  animation: background-move 10s ease-in-out infinite alternate;
+  color: white;
+}
+
+@keyframes background-move {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+
+/* Style the navigation bar */
+nav {
+  display: flex;
+  justify-content: center; /* center the contents horizontally */
+  align-items: center;
+  padding: 1rem;
+  background-color: #5e6ab6;
+}
+
+nav button {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-right: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  nav button {
+    display: block;
+    color: white;
+    font-weight: bold;
+    background-color: #4CAF50;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+  }
+  
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0.5rem 0;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  
+  nav.show ul {
+    display: flex;
+  }
+}
+/* Style the detail report container */
+#detail-report {
+  background-color: transparent;
+  height: 500px;
+  width: 600px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+/* Style the detail report table */
+#detail-report table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+/* Style the detail report table headers */
+#detail-report th {
+  text-align: left;
+  background-color: #5e6ab6;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Style the detail report table rows */
+#detail-report td {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+#users,
+#select-task,
+#statistics {
+  display: none;
+}
+
+#detail-report table tr:nth-child(1) td::before {
+  content: "\1F947"; /* gold medal emoji */
+  margin-right: 5px;
+}
+
+#detail-report table tr:nth-child(2) td::before {
+  content: "\1F948"; /* silver medal emoji */
+  margin-right: 5px;
+}
+
+#detail-report table tr:nth-child(3) td::before {
+  content: "\1F949"; /* bronze medal emoji */
+  margin-right: 5px;
+}

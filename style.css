@@ -1,0 +1,129 @@
+
+body {
+  background-image: url('night.jpg');
+  background-size: cover;
+  color: white;
+}
+
+/* Style the navigation bar */
+nav {
+  display: flex;
+  justify-content: center; /* center the contents horizontally */
+  align-items: center;
+  padding: 1rem;
+  background-color: #5e6ab6;
+}
+
+nav button {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-right: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  nav button {
+    display: block;
+    color: white;
+    font-weight: bold;
+    background-color: #4CAF50;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+  }
+  
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0.5rem 0;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  
+  nav.show ul {
+    display: flex;
+  }
+}
+    /* Style the main content */
+    main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Style the select task section */
+#select-task {
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#select-task h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#select-task select {
+  width: 100%;
+  max-width: 400px; /* set a maximum width for the select element */
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: none; /* remove the border to make it look cleaner */
+  background-color: #f7f7f7; /* add a background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add a subtle shadow */
+  border-radius: 5px; /* add some rounded corners */
+}
+
+#select-task button {
+  background-color: #5067d0; /* change the background color */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1rem;
+  border-radius: 5px; /* add some rounded corners */
+}
+
+#select-task button:hover {
+  background-color: #35418f; /* darken the background color on hover */
+}
